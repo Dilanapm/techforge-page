@@ -2,17 +2,17 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS  # Importa CORS
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
-from busines_info import info
+from bussines_info import info
 
 app = Flask(__name__)
 CORS(app)  # Esto habilita CORS para todas las rutas
 
 # Configuración del modelo
 template = """
-Responde la pregunta en español y solo si está relacionada con el estudio jurídico.
+Responde la pregunta en españoy y sobre el servicios de condominio .
 
-Información del estudio jurídico:
-{busines_info}
+Información de los servicios de seguridad y gestion en condominios.
+{bussines_info}
 
 Historial de conversación:
 {context}
@@ -32,7 +32,7 @@ def chat():
     context = data.get('context', "")
 
     # Llamada al modelo para obtener la respuesta
-    result = chain.invoke({"busines_info": info, "context": context, "question": question})
+    result = chain.invoke({"bussines_info": info, "context": context, "question": question})
 
     # Validar si la respuesta es irrelevante o fuera de contexto
     if "no puedo responder esto" in result.lower() or result.strip() == "":

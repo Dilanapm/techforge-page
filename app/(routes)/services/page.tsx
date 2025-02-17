@@ -14,7 +14,11 @@ const ServicesPage = () => {
                 <div className="max-w-[450px]">
 
                     <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5">Mis <span className="font-bold text-secondary"> servicios.</span></h1>
-                    <p className="mb-3 text-xl text-gray-300">Ofrezco servicios de desarrollo web frontend especializados en la creación de sitios web y aplicaciones atractivas y funcionales. Utilizando las últimas tecnologías, como HTML, CSS y JavaScript, diseño interfaces de usuario intuitivas y responsivas que reflejan la identidad de marca de mis clientes y mejoran su presencia en línea.</p>
+                    <p className="mb-3 text-xl text-gray-300"> Ofrecemos un <strong>sistema inteligente de gestión y seguridad</strong> diseñado para condominios,
+                        proporcionando <strong>control de acceso avanzado, monitoreo en tiempo real y alertas automáticas</strong>
+                        para garantizar la protección de residentes y visitantes. Utilizando tecnologías como
+                        <strong>visión artificial, reconocimiento de identidad y reportes digitales</strong>, optimizamos la
+                        seguridad y eficiencia en la administración del condominio.</p>
                     <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">Contacta conmigo</button>
                 </div>
 
