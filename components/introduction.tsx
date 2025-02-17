@@ -10,13 +10,15 @@ const Introduction = () => {
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
                         <TypeAnimation
                             sequence={[
-                                'puedes programarlo',
+                                'Mejor Seguridad ☠️',
                                 1000,
-                                'puedes optimizarlo',
+                                'Automaticacion de tu Condominio 🥰',
                                 1000,
-                                'puedes implementarlo',
+                                'Integra IA para facilitar los registros 🤖',
                                 1000,
-                                'puedes desarrollarlo',
+                                'Mejora la Gestion de tu Condominio 🤗',
+                                1000,
+                                'Ten el control de tu Condominio 🫡',
                                 1000
                             ]}
                             wrapper="span"
@@ -27,7 +29,7 @@ const Introduction = () => {
                     </h1>
 
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                        Como tener un condominio mas seguro con TechForge
+                        Como cuidar mejor tu Condominio y Hogar
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">

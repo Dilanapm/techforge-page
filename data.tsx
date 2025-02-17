@@ -156,8 +156,8 @@ export const dataCounter = [
 export const serviceData = [
     {
         icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        title: "Administración de Condominios",
+        description: "Gestión integral de condominios, incluyendo mantenimiento, pagos y control de residentes.",
     },
     {
         icon: <Pencil />,
@@ -166,8 +166,8 @@ export const serviceData = [
     },
     {
         icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        title: "Notificaciones y Comunicaciones",
+        description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente.",
     },
     {
         icon: <Book />,
