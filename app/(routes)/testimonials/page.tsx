@@ -1,56 +1,76 @@
-"use client"
+"use client";
 
-import Image from 'next/image';
-import { Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useState, useRef, useEffect } from "react";
 
+export default function ChatBot() {
+    const [messages, setMessages] = useState<{ sender: string; text: string }[]>([]);
+    const [input, setInput] = useState("");
+    const [context, setContext] = useState("");
+    const chatEndRef = useRef<HTMLDivElement>(null);
 
-import { dataTestimonials } from '@/data';
-import CircleImage from '@/components/circle-image';
-import AvatarPortfolio from '@/components/avatar-portfolio';
-import TransitionPage from '@/components/transition-page';
+    // Auto-scroll al final del chat
+    useEffect(() => {
+        chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [messages]);
 
-const TestimonialsPage = () => {
+    // Función para enviar el mensaje
+    const sendMessage = async () => {
+        if (!input.trim()) return;
+
+        const userMessage = { sender: "user", text: input };
+        setMessages((prev) => [...prev, userMessage]);
+
+        try {
+            const response = await fetch("http://127.0.0.1:5000/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ question: input, context }),
+            });
+
+            const data = await response.json();
+            const botMessage = { sender: "bot", text: data.response };
+
+            setMessages((prev) => [...prev, botMessage]);
+            setContext((prev) => `${prev}Tú: ${input}\nBot: ${data.response}\n`);
+        } catch (error) {
+            console.error("Error al enviar mensaje:", error);
+        }
+
+        setInput(""); // Limpiar el campo de entrada
+    };
+
     return (
-        <>
-            <TransitionPage />
-            <div className='flex flex-col justify-center h-lvh'>
-                <CircleImage />
-                <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
-                    Algunos comentarios
-                    <span className="block font-bold text-secondary"> de nuestros clientes</span>
-                </h1>
-                <div className="flex items-center justify-center">
-                    <div>
-                        <Swiper
-                            breakpoints={{
-                                320: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 15
-                                },
-                            }}
-                            freeMode={true}
-                            pagination={{
-                                clickable: true
-                            }}
-                            modules={[Pagination]}
-                            className="h-[380px] md:h-[300px] w-[270px] md:w-[550px]"
+        <div className="flex justify-center items-center min-h-screen bg-[#1e3a8a]">
+            <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-6">
+                <h1 className="text-xl font-bold text-center text-black mb-3">Chatbot del Condominio</h1>
+                <div className="h-80 overflow-y-auto p-2 border-b">
+                    {messages.map((msg, index) => (
+                        <div
+                            key={index}
+                            className={`p-2 my-1 rounded-lg ${
+                                msg.sender === "user" ? "bg-blue-500 text-white text-right" : "bg-gray-300 text-black text-left"
+                            }`}
                         >
-                            {dataTestimonials.map(({ id, name, description, imageUrl }) => (
-                                <SwiperSlide key={id}>
-                                    <Image src={imageUrl} alt={name} width="100" height="100" className="mx-auto rounded-full" />
-                                    <h4 className='text-center'>{name}</h4>
-                                    <div className="mt-5 text-center">
-                                        {description}
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
+                            {msg.text}
+                        </div>
+                    ))}
+                    <div ref={chatEndRef} />
+                </div>
+
+                <div className="flex mt-2">
+                    <input
+                        type="text"
+                        className="flex-1 p-2 border rounded-l text-black placeholder:text-black"
+                        placeholder="Escribe un mensaje..."
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
+                        onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+                    />
+                    <button className="bg-blue-500 text-white p-2 rounded-r" onClick={sendMessage}>
+                        Enviar
+                    </button>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
-
-export default TestimonialsPage;
