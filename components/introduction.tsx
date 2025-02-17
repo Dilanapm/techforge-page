@@ -13,7 +13,7 @@ const Introduction = () => {
                     width="300"
                     height="300"
                     alt="Avatar"
-                    className="rounded-xl mt-5 w-1/2 sm:w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+                    className="rounded-xl mt-3 lg:mt-20 w-1/2 sm:w-full max-w-xs  md:max-w-md lg:max-w-lg mx-auto"
                 />
 
 
@@ -45,7 +45,7 @@ const Introduction = () => {
                     </p>
 
                     {/* Botones */}
-                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-10">
+                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-10 sm:flex-row sm:gap-5">
                         <a href="/portfolio" className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                             Ver condominios
                         </a>
