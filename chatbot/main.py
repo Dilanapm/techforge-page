@@ -9,7 +9,7 @@ CORS(app)  # Esto habilita CORS para todas las rutas
 
 # Configuración del modelo
 template = """
-Responde la pregunta en españoy y sobre el servicios de condominio .
+Responde la pregunta en español y y sobre el servicio de condominio .
 
 Información de los servicios de seguridad y gestion en condominios.
 {bussines_info}
