@@ -23,13 +23,15 @@ const Introduction = () => {
                         Si puedes pensarlo, <br />
                         <TypeAnimation
                             sequence={[
-                                'puedes programarlo',
+                                'Mejor Seguridad ☠️',
                                 1000,
-                                'puedes optimizarlo',
+                                'Automaticacion de tu Condominio 🥰',
                                 1000,
-                                'puedes implementarlo',
+                                'Integra IA para facilitar los registros 🤖',
                                 1000,
-                                'puedes desarrollarlo',
+                                'Mejora la Gestion de tu Condominio 🤗',
+                                1000,
+                                'Ten el control de tu Condominio 🫡',
                                 1000
                             ]}
                             wrapper="span"

@@ -132,9 +132,9 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Shield />,
-        title: "Seguridad Inteligente",
-        description: "Implementamos un sistema de control de acceso avanzado con reconocimiento de identidad y monitoreo en tiempo real para condominios.",
+        icon: <Crop />,
+        title: "Administración de Condominios",
+        description: "Gestión integral de condominios, incluyendo mantenimiento, pagos y control de residentes.",
     },
     {
         icon: <Camera />,
@@ -142,9 +142,9 @@ export const serviceData = [
         description: "Uso de visión artificial para la detección de movimientos sospechosos, reconocimiento facial y reportes automáticos de seguridad.",
     },
     {
-        icon: <Key />,
-        title: "Control de Acceso",
-        description: "Gestión automatizada de entradas y salidas mediante identificación digital y permisos configurables para residentes y visitantes.",
+        icon: <Computer />,
+        title: "Notificaciones y Comunicaciones",
+        description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente.",
     },
     {
         icon: <Graph />,
