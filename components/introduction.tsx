@@ -8,7 +8,7 @@ const Introduction = () => {
 
                 {/* Imagen */}
                 <Image
-                    src="/condominio-fondo.png"
+                    src="/condominio-fondo.webp"
                     priority
                     width="300"
                     height="300"
