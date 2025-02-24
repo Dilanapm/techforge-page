@@ -70,10 +70,6 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
         title: "Sistema Inteligente de Gestión y Seguridad para Condominios",
         subtitle: "Transformando la Seguridad y la Administración de Condominios",
         description: "Nuestro sistema ofrece una plataforma IoT avanzada para mejorar la seguridad y eficiencia en la gestión de condominios. Desde control de accesos con reconocimiento facial hasta automatización de procesos administrativos, integramos tecnología de vanguardia para ofrecer una experiencia segura y optimizada a los residentes y administradores.",
@@ -81,10 +77,6 @@ export const dataAboutPage = [
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
         title: "Seguridad Avanzada con IoT",
         subtitle: "Monitoreo en Tiempo Real y Control de Accesos",
         description: "Implementamos cámaras inteligentes, sensores y reconocimiento facial para garantizar la seguridad en los accesos. Todo gestionado desde una aplicación móvil intuitiva.",
@@ -92,10 +84,6 @@ export const dataAboutPage = [
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
         title: "Automatización Administrativa",
         subtitle: "Facilitando la Gestión de Condominios",
         description: "Desde la administración de pagos hasta la comunicación con residentes, nuestra plataforma digitaliza y optimiza todos los procesos administrativos, reduciendo costos y tiempos de gestión.",
@@ -103,10 +91,6 @@ export const dataAboutPage = [
     },
     {
         id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
         title: "Tecnología para el Futuro",
         subtitle: "Innovación y Eficiencia en la Vida Condominial",
         description: "Nos enfocamos en la integración de tecnologías emergentes como inteligencia artificial, machine learning y blockchain para garantizar la seguridad y transparencia en la administración de condominios.",
@@ -132,7 +116,6 @@ export const dataCounter = [
     },
     {
         id: 2,
-        endCounter: 1,
         endCounter: 1088,
         text: "familias seguras",
         lineRight: true,
@@ -140,7 +123,6 @@ export const dataCounter = [
     },
     {
         id: 3,
-        text: "Premios ganadores",
         endCounter: 1,
         text: "Premios y reconocimientos",
         lineRight: false,
@@ -200,10 +182,6 @@ export const serviceData = [
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web Pro",
-        image: "/image-1.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio Santa Cruz De La Colina",
         image: "/condominio-santacruz-de-la-colina.jpg",
         urlGithub: "https://www.facebook.com/condominio.scdelacolina/?locale=es_LA",
@@ -211,10 +189,6 @@ export const dataPortfolio = [
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio Trii",
         image: "/trii.png",
         urlGithub: "https://www.facebook.com/TriiiDepartamentos/?locale=es_LA",
@@ -222,10 +196,6 @@ export const dataPortfolio = [
     },
     {
         id: 3,
-        title: "Estrategias Web",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Jardines del Urubó",
         image: "/jardines-urubo.jpg",
         urlGithub: "https://www.facebook.com/jdelurubo/?locale=es_LA",
@@ -233,10 +203,6 @@ export const dataPortfolio = [
     },
     {
         id: 4,
-        title: "Ideas Creativas",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominios Sevilla",
         image: "/condo-sevilla.jpg",
         urlGithub: "https://www.facebook.com/CondominiosSevilla?locale=es_LA",
@@ -244,10 +210,6 @@ export const dataPortfolio = [
     },
     {
         id: 5,
-        title: "Webs Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio La Hacienda",
         image: "/condo-la-hacienda.jpg",
         urlGithub: "https://www.facebook.com/CondominioLaHaciendadelUrubo/?locale=es_LA",
@@ -255,10 +217,6 @@ export const dataPortfolio = [
     },
     {
         id: 6,
-        title: "Web Dinámica",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio Zero",
         image: "/condo-zero-improvisado.png",
         urlGithub: "https://condominio-zero-santa-cruz-de-la-sierra.santacruztophotels.com/es/",
@@ -266,10 +224,6 @@ export const dataPortfolio = [
     },
     {
         id: 7,
-        title: "Dark Web ",
-        image: "/image-7.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio la cazona ",
         image: "/condo-la-casona.jpg",
         urlGithub: "https://condominio-la-casona.santacruztophotels.com/es/",
@@ -277,10 +231,6 @@ export const dataPortfolio = [
     },
     {
         id: 8,
-        title: "E-commerce web",
-        image: "/image-8.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio vista verde",
         image: "/condo-vista-verde.jpg",
         urlGithub: "https://www.facebook.com/UrbVistaVerde/?locale=es_LA",
