@@ -13,7 +13,7 @@ const ServicesPage = () => {
             <div className="grid items-center justify-center h-screen max-w-5xl gap-6 mx-auto md:grid-cols-2">
                 <div className="max-w-[450px]">
 
-                    <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5">Mis <span className="font-bold text-secondary"> servicios.</span></h1>
+                    <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5">Nuestros <span className="font-bold text-secondary"> servicios.</span></h1>
                     <p className="mb-3 text-xl text-gray-300"> Ofrecemos un <strong>sistema inteligente de gestión y seguridad</strong> diseñado para condominios,
                         proporcionando <strong>control de acceso avanzado, monitoreo en tiempo real y alertas automáticas</strong>
                         para garantizar la protección de residentes y visitantes. Utilizando tecnologías como

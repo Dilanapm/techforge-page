@@ -117,18 +117,15 @@ export const dataAboutPage = [
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 10,
-        text: "Años de experiencia",
-        endCounter: 5,
+        endCounter: 1,
         text: "Años de desarrollo e investigación",
         lineRight: true,
         lineRightMobile: true,
     },
+
     {
         id: 1,
-        endCounter: 80,
-        text: "Clientes satisfechos",
-        endCounter: 50,
+        endCounter: 8,
         text: "Condominios beneficiados",
         lineRight: true,
         lineRightMobile: false,
@@ -136,49 +133,68 @@ export const dataCounter = [
     {
         id: 2,
         endCounter: 1,
-        text: "Proyectos finalizados",
-        endCounter: 1000,
-        text: "Usuarios protegidos",
+        endCounter: 1088,
+        text: "familias seguras",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
-        endCounter: 30,
         text: "Premios ganadores",
-        endCounter: 20,
+        endCounter: 1,
         text: "Premios y reconocimientos",
         lineRight: false,
         lineRightMobile: false,
     },
 ];
 
+
 export const serviceData = [
     {
-        icon: <Crop />,
+        icon: <HomeIcon />,
         title: "Administración de Condominios",
         description: "Gestión integral de condominios, incluyendo mantenimiento, pagos y control de residentes.",
     },
     {
-        icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        icon: <UserRound />,
+        title: "Control de Residentes",
+        description: "Registro y administración de propietarios e inquilinos con acceso seguro a información relevante.",
     },
     {
-        icon: <Computer />,
+        icon: <Graph />,
+        title: "Gestión de Pagos",
+        description: "Administración de cuotas, generación de estados de cuenta y control de pagos en línea.",
+    },
+    {
+        icon: <BookText />,
+        title: "Gestión de Documentos",
+        description: "Almacenamiento y administración de documentos importantes como normativas, contratos y actas.",
+    },
+    {
+        icon: <Speech />,
         title: "Notificaciones y Comunicaciones",
         description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente.",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+        icon: <Shield />,
+        title: "Seguridad y Control de Acceso",
+        description: "Registro de visitas, control de accesos y monitoreo de seguridad dentro del condominio.",
     },
     {
-        icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        icon: <Camera />,
+        title: "Monitoreo y Vigilancia",
+        description: "Supervisión en tiempo real de cámaras de seguridad y control de eventos en el condominio.",
     },
+    {
+        icon: <Key />,
+        title: "Gestión de Llaves y Accesos",
+        description: "Control y administración de llaves digitales y accesos restringidos en el condominio.",
+    },
+    {
+        icon: <Support />,
+        title: "Soporte y Atención al Cliente",
+        description: "Atención y solución de problemas relacionados con la administración del condominio.",
+    }
 ];
 
 export const dataPortfolio = [
