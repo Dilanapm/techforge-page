@@ -1,21 +1,30 @@
-"use client"
+"use client";
 
 import { socialNetworks } from "@/data";
 import Link from "next/link";
 import { MotionTransition } from "./transition-component";
+import Image from "next/image";
 
-const Header = () => {
+const Header: React.FC = () => {
     return (
-        <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
-            <header>
-                <div className="container justify-between max-w-6xl mx-auto md:flex">
-                    <Link href='/'>
-                        <h1 className="my-3 text-4xl font-bold text-center md:text-left">
-                            Tech
-                            <span className="text-secondary">Forge</span>
-                        </h1>
+        <MotionTransition position="bottom" className="fixed top-0 left-0 w-full z-50 bg-darkBg bg-opacity-90 backdrop-blur-md shadow-md h-20">
+            <header className="w-full h-full flex items-center">
+                <div className="container max-w-6xl mx-auto flex flex-wrap items-center justify-between px-4 md:flex-nowrap">
+                    {/* Logo y Nombre */}
+                    <Link href="/" className="flex flex-col items-center md:flex-row md:items-center">
+                        
+                        <Image
+                            src="/logo-techforge.webp"
+                            priority
+                            width={50}
+                            height={50}
+                            className="md:ml-4 mt-2 md:mt-0"
+                            alt="tech-forge-logo"
+                        />
                     </Link>
-                    <div className="flex items-center justify-center gap-7">
+
+                    {/* Redes Sociales */}
+                    <div className="flex items-center justify-center gap-5 md:gap-7  md:w-auto mt-4 md:mt-0">
                         {socialNetworks.map(({ logo, src, id }) => (
                             <Link
                                 key={id}
@@ -31,6 +40,6 @@ const Header = () => {
             </header>
         </MotionTransition>
     );
-}
+};
 
 export default Header;

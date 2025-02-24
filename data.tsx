@@ -8,29 +8,30 @@ import {
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.linkedin.com/in/dilan-apolaca-3616aa219/",
     },
-    {
-        id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 4,
-        logo: <Rss size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
-        src: "#!",
-    },
+    // {
+    //     id: 2,
+    //     logo: <Youtube size={30} strokeWidth={1} />,
+    //     src: "#!",
+    // },
+    
+    // {
+    //     id: 3,
+    //     logo: <Twitter size={30} strokeWidth={1} />,
+    //     src: "#!",
+    // },
+    // {
+    //     id: 4,
+    //     logo: <Rss size={30} strokeWidth={1} />,
+    //     src: "#!",
+    // },
+    // {
+    //     id: 5,
+    //     logo: <Twitch size={30} strokeWidth={1} />,
+    //     src: "#!",
+    // },
 ];
 
 
@@ -70,10 +71,6 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
         title: "Sistema Inteligente de Gestión y Seguridad para Condominios",
         subtitle: "Transformando la Seguridad y la Administración de Condominios",
         description: "Nuestro sistema ofrece una plataforma IoT avanzada para mejorar la seguridad y eficiencia en la gestión de condominios. Desde control de accesos con reconocimiento facial hasta automatización de procesos administrativos, integramos tecnología de vanguardia para ofrecer una experiencia segura y optimizada a los residentes y administradores.",
@@ -81,10 +78,6 @@ export const dataAboutPage = [
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
         title: "Seguridad Avanzada con IoT",
         subtitle: "Monitoreo en Tiempo Real y Control de Accesos",
         description: "Implementamos cámaras inteligentes, sensores y reconocimiento facial para garantizar la seguridad en los accesos. Todo gestionado desde una aplicación móvil intuitiva.",
@@ -92,10 +85,6 @@ export const dataAboutPage = [
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
         title: "Automatización Administrativa",
         subtitle: "Facilitando la Gestión de Condominios",
         description: "Desde la administración de pagos hasta la comunicación con residentes, nuestra plataforma digitaliza y optimiza todos los procesos administrativos, reduciendo costos y tiempos de gestión.",
@@ -103,10 +92,6 @@ export const dataAboutPage = [
     },
     {
         id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
         title: "Tecnología para el Futuro",
         subtitle: "Innovación y Eficiencia en la Vida Condominial",
         description: "Nos enfocamos en la integración de tecnologías emergentes como inteligencia artificial, machine learning y blockchain para garantizar la seguridad y transparencia en la administración de condominios.",
@@ -125,16 +110,15 @@ export const dataCounter = [
 
     {
         id: 1,
-        endCounter: 8,
+        endCounter: 80,
         text: "Condominios beneficiados",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 1,
-        endCounter: 1088,
-        text: "familias seguras",
+        endCounter: 1000,
+        text: "Usuarios protegidos",
         lineRight: true,
         lineRightMobile: true,
     },
@@ -142,7 +126,6 @@ export const dataCounter = [
         id: 3,
         text: "Premios ganadores",
         endCounter: 1,
-        text: "Premios y reconocimientos",
         lineRight: false,
         lineRightMobile: false,
     },
@@ -166,9 +149,10 @@ export const serviceData = [
         description: "Administración de cuotas, generación de estados de cuenta y control de pagos en línea.",
     },
     {
-        icon: <BookText />,
-        title: "Gestión de Documentos",
-        description: "Almacenamiento y administración de documentos importantes como normativas, contratos y actas.",
+
+        icon: <Camera />,
+        title: "Monitoreo con IA",
+        description: "Uso de visión artificial para la detección de movimientos sospechosos, reconocimiento facial y reportes automáticos de seguridad.",
     },
     {
         icon: <Speech />,
@@ -176,14 +160,9 @@ export const serviceData = [
         description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente.",
     },
     {
-        icon: <Shield />,
-        title: "Seguridad y Control de Acceso",
-        description: "Registro de visitas, control de accesos y monitoreo de seguridad dentro del condominio.",
-    },
-    {
-        icon: <Camera />,
-        title: "Monitoreo y Vigilancia",
-        description: "Supervisión en tiempo real de cámaras de seguridad y control de eventos en el condominio.",
+        icon: <Graph />,
+        title: "Reportes y Estadísticas",
+        description: "Generación de reportes digitales con datos en tiempo real para mejorar la administración y seguridad del condominio.",
     },
     {
         icon: <Key />,
@@ -194,27 +173,24 @@ export const serviceData = [
         icon: <Support />,
         title: "Soporte y Atención al Cliente",
         description: "Atención y solución de problemas relacionados con la administración del condominio.",
-    }
+    },  
+    {icon: <Support />,
+        title: "Soporte 24/7",
+        description: "Atención y mantenimiento continuo para garantizar un funcionamiento óptimo del sistema en todo momento.",
+    },
 ];
+
 
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web Pro",
-        image: "/image-1.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio Santa Cruz De La Colina",
-        image: "/condominio-santacruz-de-la-colina.jpg",
+        image: "/condominio-santacruz-de-la-colina.webp",
         urlGithub: "https://www.facebook.com/condominio.scdelacolina/?locale=es_LA",
         urlDemo: "https://www.instagram.com/explore/locations/297766866/condominio-santa-cruz-de-la-colina-urubo-santa-cruz/?next=%2Finikelawar%2Ffeed%2F&hl=es-la",
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio Trii",
         image: "/trii.png",
         urlGithub: "https://www.facebook.com/TriiiDepartamentos/?locale=es_LA",
@@ -222,67 +198,43 @@ export const dataPortfolio = [
     },
     {
         id: 3,
-        title: "Estrategias Web",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Jardines del Urubó",
-        image: "/jardines-urubo.jpg",
+        image: "/jardines-urubo.webp",
         urlGithub: "https://www.facebook.com/jdelurubo/?locale=es_LA",
         urlDemo: "https://www.facebook.com/jdelurubo/?locale=es_LA",
     },
     {
         id: 4,
-        title: "Ideas Creativas",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominios Sevilla",
-        image: "/condo-sevilla.jpg",
+        image: "/condo-sevilla.webp",
         urlGithub: "https://www.facebook.com/CondominiosSevilla?locale=es_LA",
         urlDemo: "https://www.waze.com/es-419/live-map/directions/condominio-sevilla-el-bosque-santa-cruz-de-la-sierra?to=place.w.194578007.1945517928.10604519",
     },
     {
         id: 5,
-        title: "Webs Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio La Hacienda",
-        image: "/condo-la-hacienda.jpg",
+        image: "/condo-la-hacienda.webp",
         urlGithub: "https://www.facebook.com/CondominioLaHaciendadelUrubo/?locale=es_LA",
         urlDemo: "https://www.ultracasas.com/inmueble/casa-en-venta-entre-5to-y-6to-anillo-norte-santa-cruz-de-la-sierra-565890",
     },
     {
         id: 6,
-        title: "Web Dinámica",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio Zero",
-        image: "/condo-zero-improvisado.png",
+        image: "/condo-zero-improvisado.webp",
         urlGithub: "https://condominio-zero-santa-cruz-de-la-sierra.santacruztophotels.com/es/",
         urlDemo: "https://condominio-zero-santa-cruz-de-la-sierra-bo-4.hotelmix.es/",
     },
     {
         id: 7,
-        title: "Dark Web ",
-        image: "/image-7.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio la cazona ",
-        image: "/condo-la-casona.jpg",
+        image: "/condo-la-casona.webp",
         urlGithub: "https://condominio-la-casona.santacruztophotels.com/es/",
         urlDemo: "https://es.wikipedia.org/wiki/La_Casona_(Bolivia)",
     },
     {
         id: 8,
-        title: "E-commerce web",
-        image: "/image-8.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
         title: "Condominio vista verde",
-        image: "/condo-vista-verde.jpg",
+        image: "/condo-vista-verde.webp",
         urlGithub: "https://www.facebook.com/UrbVistaVerde/?locale=es_LA",
         urlDemo: "https://www.waze.com/es/live-map/directions/condominio-vista-verde-av.-radial-19-santa-cruz-de-la-sierra?to=place.w.194512470.1944993629.1981587",
     }
