@@ -9,7 +9,7 @@ export const socialNetworks = [
     {
         id: 1,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "https://www.linkedin.com/in/dilan-apolaca-3616aa219/",
+        src: "https://www.linkedin.com/in/tech-forge-b7a9a2354/",
     },
     // {
     //     id: 2,
