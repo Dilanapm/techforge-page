@@ -13,18 +13,18 @@ const Introduction = () => {
                     alt="Avatar"
                     className="rounded-xl mt-3 lg:mt-20 w-1/2 sm:w-full max-w-xs  md:max-w-md lg:max-w-lg mx-auto" />
                 <div className="flex flex-col justify-center max-w-md">
-                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
+                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Techforge te brinda, <br />
                         <TypeAnimation
                             sequence={[
                                 'Mejor Seguridad ☠️',
                                 1000,
                                 'Automaticacion de tu Condominio 🥰',
                                 1000,
-                                'Integra IA para facilitar los registros 🤖',
+                                'Integracion con IA para facilitar los registros 🤖',
                                 1000,
-                                'Mejora la Gestion de tu Condominio 🤗',
+                                'Gestion mejorada de tu Condominio 🤗',
                                 1000,
-                                'Ten el control de tu Condominio 🫡',
+                                'el control de tu Condominio 🫡',
                                 1000
                             ]}
                             wrapper="span"

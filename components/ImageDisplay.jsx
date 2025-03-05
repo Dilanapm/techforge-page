@@ -1,16 +1,7 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { MotionTransition } from "./transition-component";  
-
-interface ImageDisplayProps {
-    src: string;
-    alt: string;
-    width?: number;
-    height?: number;
-    className?: string;
-    animated?: boolean;
-}
 
 export function ImageDisplay({ 
     src, 
@@ -19,7 +10,7 @@ export function ImageDisplay({
     height = 300, 
     className = "", 
     animated = false 
-}: ImageDisplayProps) {
+}) {
     const imageElement = (
         <Image 
             src={src}  

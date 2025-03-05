@@ -7,7 +7,7 @@ import CounterServices from "@/components/counter-services";
 import TimeLine from "@/components/time-line";
 import TransitionPage from "@/components/transition-page";
 
-const AboutMePage = () => {
+const AboutUsPage = () => {
     return (
         <>
             <TransitionPage />
@@ -58,4 +58,4 @@ const AboutMePage = () => {
     );
 }
 
-export default AboutMePage;
+export default AboutUsPage;

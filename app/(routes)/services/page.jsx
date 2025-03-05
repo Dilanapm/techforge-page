@@ -6,7 +6,6 @@ import Link from "next/link";
 const ServicesPage = () => {
     return (
         <>
-
             <TransitionPage />
             <CircleImage />
             <AvatarServices />
@@ -24,7 +23,7 @@ const ServicesPage = () => {
                     </p>
 
 
-                    <Link href="/testimonials">
+                    <Link href="/contact-us">
                         <button className="ml-48 px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65">
                             <strong>Contáctanos</strong>
                         </button>

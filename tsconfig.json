@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/header.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/header.jsx", "components/navbar.jsx", "app/page.jsx", "app/layout.jsx", "app/(routes)/testimonials/page.jsx", "components/container-page.jsx", "components/ImageDisplay.jsx", "components/introduction.jsx", "components/transition-page.jsx", "components/transition-component.jsx", "components/time-line.jsx", "components/slider-services.jsx", "components/portfolio-box.jsx", "components/navbar.jsx", "app/(routes)/about-us/page.jsx", "app/(routes)/clients/page.jsx", "app/(routes)/services/page.jsx", "components/cover-particles.jsx", "components/counter-services.jsx", "components/container-page.jsx", "components/circle-image.jsx", "components/avatar.jsx", "components/avatar-services.jsx", "components/avatar-portfolio.jsx"],
   "exclude": ["node_modules"]
 }

@@ -46,7 +46,7 @@ export const itemsNavbar = [
         id: 2,
         title: "User",
         icon: <UserRound size={25} color="#fff" strokeWidth={1} />,
-        link: "/about-me",
+        link: "/about-us",
     },
     {
         id: 3,
@@ -58,13 +58,13 @@ export const itemsNavbar = [
         id: 4,
         title: "Target",
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
-        link: "/portfolio",
+        link: "/clients",
     },
     {
         id: 5,
         title: "Home",
         icon: <Speech size={25} color="#fff" strokeWidth={1} />,
-        link: "/testimonials",
+        link: "/contact-us",
     },
 ];
 
@@ -192,7 +192,7 @@ export const dataPortfolio = [
     {
         id: 2,
         title: "Condominio Trii",
-        image: "/trii.png",
+        image: "/trii-condo.webp",
         urlGithub: "https://www.facebook.com/TriiiDepartamentos/?locale=es_LA",
         urlDemo: "https://www.instagram.com/triii_departamentos/",
     },

@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 
 import "./globals.css";
@@ -11,20 +10,13 @@ import Header from "@/components/header";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "condominio91",
-  description: "Landing page made by TechForge",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={urbanist.className}>
-        <Navbar />
+        <div>
+          <Navbar />
+        </div>
         <Header />
         {children}
       </body>
