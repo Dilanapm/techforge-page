@@ -102,60 +102,82 @@ export const dataAboutPage = [
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 5,
+        endCounter: 1,
         text: "Años de desarrollo e investigación",
         lineRight: true,
         lineRightMobile: true,
     },
+
     {
         id: 1,
-        endCounter: 80,
+        endCounter: 8,
         text: "Condominios beneficiados",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 1000,
-        text: "Usuarios protegidos",
+        endCounter: 1088,
+        text: "familias seguras",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
-        endCounter: 20,
+        endCounter: 1,
         text: "Premios y reconocimientos",
         lineRight: false,
         lineRightMobile: false,
     },
 ];
 
+
 export const serviceData = [
     {
-        icon: <Crop />,
+        icon: <HomeIcon />,
         title: "Administración de Condominios",
         description: "Gestión integral de condominios, incluyendo mantenimiento, pagos y control de residentes.",
     },
     {
-        icon: <Camera />,
-        title: "Monitoreo con IA",
-        description: "Uso de visión artificial para la detección de movimientos sospechosos, reconocimiento facial y reportes automáticos de seguridad.",
+        icon: <UserRound />,
+        title: "Control de Residentes",
+        description: "Registro y administración de propietarios e inquilinos con acceso seguro a información relevante.",
     },
     {
-        icon: <Computer />,
+        icon: <Graph />,
+        title: "Gestión de Pagos",
+        description: "Administración de cuotas, generación de estados de cuenta y control de pagos en línea.",
+    },
+    {
+        icon: <BookText />,
+        title: "Gestión de Documentos",
+        description: "Almacenamiento y administración de documentos importantes como normativas, contratos y actas.",
+    },
+    {
+        icon: <Speech />,
         title: "Notificaciones y Comunicaciones",
         description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente.",
     },
     {
-        icon: <Graph />,
-        title: "Reportes y Estadísticas",
-        description: "Generación de reportes digitales con datos en tiempo real para mejorar la administración y seguridad del condominio.",
+        icon: <Shield />,
+        title: "Seguridad y Control de Acceso",
+        description: "Registro de visitas, control de accesos y monitoreo de seguridad dentro del condominio.",
+    },
+    {
+        icon: <Camera />,
+        title: "Monitoreo y Vigilancia",
+        description: "Supervisión en tiempo real de cámaras de seguridad y control de eventos en el condominio.",
+    },
+    {
+        icon: <Key />,
+        title: "Gestión de Llaves y Accesos",
+        description: "Control y administración de llaves digitales y accesos restringidos en el condominio.",
     },
     {
         icon: <Support />,
-        title: "Soporte 24/7",
-        description: "Atención y mantenimiento continuo para garantizar un funcionamiento óptimo del sistema en todo momento.",
-    },
+        title: "Soporte y Atención al Cliente",
+        description: "Atención y solución de problemas relacionados con la administración del condominio.",
+    }
 ];
 
 
