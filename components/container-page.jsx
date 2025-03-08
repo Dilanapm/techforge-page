@@ -1,9 +1,13 @@
+import { CoverParticles } from "./cover-particles";
+
 const ContainerPage = ({ children }) => {
     return (
-        <div className="w-full max-w-6xl px-4 pb-40 mx-auto mt-40 md:pb-0 md:px-6">
-            {children}
+        <div className="w-full min-h-screen flex flex-col 
+        bg-darkBg/60 bg-no-repeat">
+            <CoverParticles />
+            <div className="flex-1 w-full">{children}</div>
         </div>
     );
-}
+};
 
 export default ContainerPage;

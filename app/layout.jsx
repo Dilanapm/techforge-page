@@ -14,11 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={urbanist.className}>
-        <div>
-          <Navbar />
-        </div>
         <Header />
         {children}
+          <Navbar />
+        
       </body>
     </html>
   );

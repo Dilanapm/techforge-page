@@ -3,9 +3,11 @@ import CircleImage from "@/components/circle-image";
 import SliderServices from "@/components/slider-services";
 import TransitionPage from "@/components/transition-page";
 import Link from "next/link";
+import { CoverParticles } from "@/components/cover-particles";
 const ServicesPage = () => {
     return (
         <>
+        <CoverParticles/>
             <TransitionPage />
             <CircleImage />
             <AvatarServices />
@@ -16,10 +18,7 @@ const ServicesPage = () => {
                     </h1>
                     <p className="mb-3 text-xl text-gray-300">
                         Ofrecemos un <strong>sistema inteligente de gestión y seguridad</strong> diseñado para condominios,
-                        proporcionando <strong>control de acceso avanzado, monitoreo en tiempo real y alertas automáticas</strong>
-                        para garantizar la protección de residentes y visitantes. Utilizando tecnologías como
-                        <strong>visión artificial, reconocimiento de identidad y reportes digitales</strong>, optimizamos la
-                        seguridad y eficiencia en la administración del condominio.
+                        proporcionando control de acceso avanzado, monitoreo en tiempo real y alertas automáticas.
                     </p>
 
 

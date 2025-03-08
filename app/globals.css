@@ -5,6 +5,7 @@
 html {
   /* height: 100%; */
 }
+
 html,
 body {
   /* height: 100%; */
@@ -13,19 +14,63 @@ body {
 }
 
 main {
-  background: #393a47;
+  background: #1f1934;
   height: 100vh;
   height: 100dvh;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background-color: #f5741c;
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #009ca6;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Personalización completa y responsive para bullets Swiper */
+.swiper-pagination-bullet {
+  background-color: #009ca6;
+  /* Color de bullets por defecto */
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  /* Color activo blanco para buen contraste */
+  opacity: 1;
+  transform: scale(1.3);
+  /* Hace el punto activo más grande */
+}
+
+/* Flechas de navegación personalizadas (opcionales pero recomendadas) */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #009ca6 !important;
+  /* mismo color que bullets para consistencia visual */
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    transform: scale(1.2);
+  }
+}
+
+/* Centrar la paginación de Swiper */
+.swiper-pagination {
+  bottom: -20px;
+  display: flex;
+  left: 50%;
+  justify-content: center;
+  gap: 8px;
 }
