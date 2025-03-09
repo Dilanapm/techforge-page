@@ -16,9 +16,10 @@ import ContainerPage from "@/components/container-page";
 import ClientBox from "@/components/clients-box";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { CoverParticles } from "@/components/cover-particles";
+
 const ClientsPage = () => {
     return (
-       <ContainerPage>
+        <ContainerPage>
             <TransitionPage />
             <div className="flex flex-col justify-center items-center relative mt-20">
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
@@ -32,6 +33,12 @@ const ClientsPage = () => {
                         grabCursor={true}
                         centeredSlides={true}
                         loop={true}
+                        navigation={{
+                            nextEl: ".swiper-clients-next",
+                            prevEl: ".swiper-clients-prev",
+                            clickable: true,
+                        }}
+                        pagination={{ el: ".swiper-pagination", clickable: true }}
                         breakpoints={{
                             320: { slidesPerView: 1, spaceBetween: 10 }, // Móviles
                             640: { slidesPerView: 1.5, spaceBetween: 20 }, // Tablets pequeñas
@@ -43,12 +50,6 @@ const ClientsPage = () => {
                             depth: 180,
                             modifier: 1.8,
                             slideShadows: true,
-                        }}
-                        pagination={{ el: ".swiper-pagination", clickable: true }}
-                        navigation={{
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                            clickable: true,
                         }}
                         modules={[EffectCoverflow, Pagination, Navigation]}
                         className="swiper_container h-[460px] md:h-[460px] overflow-visible relative mb-4"
@@ -65,17 +66,17 @@ const ClientsPage = () => {
                     </Swiper>
 
                     {/* Controles de navegación - Se colocan fuera del Swiper */}
-                    <div className="w-full flex mt-auto justify-center px-12 md:px-4 transform z-50">
-                        <button className="swiper-button-prev slider-arrow bg-indigo-700 text-black p-2 md:p-3 rounded-full shadow-md hover:bg-indigo-950 transition z-50">
-                            <ChevronLeft className="w-4 h-4  md:w-8 md:h-8" />
+                    <div className="absolute top-1/2 left-0 w-full flex justify-between px-4 transform -translate-y-1/2 z-50">
+                        <button className="swiper-clients-prev bg-indigo-700 text-white p-3 rounded-full shadow-md hover:bg-indigo-950 transition z-50">
+                            <ChevronLeft className="w-6 h-6" />
                         </button>
-                        <button className="swiper-button-next slider-arrow bg-indigo-700 text-black p-2 md:p-3 rounded-full shadow-md hover:bg-indigo-950 transition z-50">
-                            <ChevronRight className="w-4 h-4 md:w-8 md:h-8" />
+                        <button className="swiper-clients-next bg-indigo-700 text-white p-3 rounded-full shadow-md hover:bg-indigo-950 transition z-50">
+                            <ChevronRight className="w-6 h-6" />
                         </button>
                     </div>
-                    
-                    <div className="swiper-pagination"></div>
-                    
+
+                    {/* Paginación centrada */}
+                    <div className="swiper-pagination mt-4"></div>
                 </div>
             </div>
         </ContainerPage>

@@ -18,7 +18,7 @@ const Introduction = () => {
                             sequence={[
                                 'Mejor Seguridad ☠️',
                                 1000,
-                                'Automaticacion de tu Condominio 🥰',
+                                'Automatizacion de tu Condominio 🥰',
                                 1000,
                                 'Integracion con IA para facilitar los registros 🤖',
                                 1000,

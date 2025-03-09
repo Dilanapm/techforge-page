@@ -48,12 +48,16 @@ main {
   /* Hace el punto activo más grande */
 }
 
-/* Flechas de navegación personalizadas (opcionales pero recomendadas) */
-.swiper-button-prev,
-.swiper-button-next {
+/* Flechas personalizadas para cada Swiper */
+.swiper-services-prev, .swiper-services-next {
   color: #009ca6 !important;
-  /* mismo color que bullets para consistencia visual */
 }
+
+.swiper-clients-prev, .swiper-clients-next {
+  color: #ffffff !important;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .swiper-pagination-bullet {
