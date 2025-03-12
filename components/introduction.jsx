@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link"; // Usar Next.js para navegación
 import { TypeAnimation } from 'react-type-animation';
 
 const Introduction = () => {
     return (
-        <div className="z-20 w-full bg-darkBg/60 h-screen flex items-center justify-center overflow-hidden">
+        <div className="relative z-20 w-full bg-darkBg/60 min-h-screen flex items-center justify-center overflow-visible">
             <div className="grid items-center max-w-6xl px-6 md:grid-cols-2">
                 
                 {/* Imagen optimizada */}
@@ -46,14 +47,17 @@ const Introduction = () => {
                     </p>
 
                     {/* Botones */}
-                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-10 sm:flex-row sm:gap-5 pb-32">
-                        <a href="/portfolio" className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
-                            Ver condominios
-                        </a>
-                        <a href="/testimonials"
-                            className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
-                            Contáctanos
-                        </a>
+                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-10 sm:flex-row sm:gap-5 pb-10">
+                        <Link href="/clients">
+                            <button className="px-5 py-3 transition-all border-2 cursor-pointer text-md rounded-xl hover:shadow-xl hover:shadow-white/50">
+                                Nuestros clientes
+                            </button>
+                        </Link>
+                        <Link href="/contact-us">
+                            <button className="px-5 py-3 transition-all border-2 cursor-pointer text-md text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
+                                Contáctanos
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

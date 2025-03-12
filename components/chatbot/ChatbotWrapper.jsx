@@ -1,23 +1,22 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
-import dynamic from 'next/dynamic';
+import { useState, useEffect, useRef } from 'react';
 import ChatBubble from './ChatBubble';
 
-// Carga dinámica del componente ChatbotModal
-const ChatbotModal = dynamic(() => import('./ChatbotModal'), {
-  ssr: false, // Deshabilita el renderizado en el servidor
-  loading: () => <div>Cargando chatbot...</div>
-});
-
 const VoiceflowWidget = () => {
+  const scriptAdded = useRef(false);
+
   useEffect(() => {
+    if (scriptAdded.current) return; // Evita cargar el script múltiples veces
+    scriptAdded.current = true;
+
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs';
+    script.async = true;
     script.onload = () => {
-      window.voiceflow.chat.load({
-        verify: { projectID: '67d0aba888a3f48649db3a87' }, // Tu projectID de Voiceflow
+      window.voiceflow?.chat?.load?.({
+        verify: { projectID: '67d0aba888a3f48649db3a87' },
         url: 'https://general-runtime.voiceflow.com',
         versionID: 'production',
         voice: {
@@ -25,11 +24,13 @@ const VoiceflowWidget = () => {
         },
       });
     };
+
     document.body.appendChild(script);
 
-    // Limpiar el script cuando el componente se desmonte
     return () => {
-      document.body.removeChild(script);
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
     };
   }, []);
 
@@ -37,27 +38,9 @@ const VoiceflowWidget = () => {
 };
 
 export default function ChatbotWrapper() {
-  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  const openChatbot = () => setIsChatbotOpen(true);
-  const closeChatbot = () => setIsChatbotOpen(false);
-
-  if (!isClient) return <ChatBubble onClick={() => {}} />;
-
   return (
     <>
-      <ChatBubble onClick={openChatbot} />
-      {isChatbotOpen && (
-        <Suspense fallback={<div>Cargando chatbot...</div>}>
-          <ChatbotModal isOpen={isChatbotOpen} onClose={closeChatbot} />
-        </Suspense>
-      )}
-      {/* Cargar el widget de Voiceflow */}
+      <ChatBubble onClick={() => window.voiceflow?.chat?.open()} />
       <VoiceflowWidget />
     </>
   );
