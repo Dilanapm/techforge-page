@@ -10,6 +10,32 @@ const ChatbotModal = dynamic(() => import('./ChatbotModal'), {
   loading: () => <div>Cargando chatbot...</div>
 });
 
+const VoiceflowWidget = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs';
+    script.onload = () => {
+      window.voiceflow.chat.load({
+        verify: { projectID: '67d0aba888a3f48649db3a87' }, // Tu projectID de Voiceflow
+        url: 'https://general-runtime.voiceflow.com',
+        versionID: 'production',
+        voice: {
+          url: 'https://runtime-api.voiceflow.com',
+        },
+      });
+    };
+    document.body.appendChild(script);
+
+    // Limpiar el script cuando el componente se desmonte
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return null;
+};
+
 export default function ChatbotWrapper() {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
@@ -31,6 +57,8 @@ export default function ChatbotWrapper() {
           <ChatbotModal isOpen={isChatbotOpen} onClose={closeChatbot} />
         </Suspense>
       )}
+      {/* Cargar el widget de Voiceflow */}
+      <VoiceflowWidget />
     </>
   );
 }
