@@ -9,7 +9,7 @@ import TransitionPage from "@/components/transition-page";
 import Link from "next/link";
 import ContainerPage from "@/components/container-page";
 import ServiceFeature from "@/components/ServiceSection";
-import InfosobreNosotros from "@/components/infosobrenosotros";
+
 import { CoverParticles } from "@/components/cover-particles";
 const SECTIONS = [
     {
