@@ -1,18 +1,23 @@
-// components/chatbot/ChatbotModal.jsx
 'use client';
-
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './ChatbotModal.module.css';
-import { ChatWindow } from '@voiceflow/react-chat';
 import 'regenerator-runtime/runtime';
 
 const ChatbotModal = ({ isOpen, onClose }) => {
-  // Asegúrate de que estas variables estén definidas en tu .env.local
-  const projectID = process.env.NEXT_PUBLIC_VOICEFLOW_PROJECT_ID;
-  const apiKey = process.env.NEXT_PUBLIC_VOICEFLOW_API_KEY;
+  const [ChatWindow, setChatWindow] = useState(null);
+  const projectID = process.env.NEXT_PUBLIC_VOICEFLOW_PROJECT_ID || '';
+
+  useEffect(() => {
+    // Importación dinámica del componente ChatWindow
+    import('@voiceflow/react-chat').then((module) => {
+      setChatWindow(() => module.ChatWindow);
+    }).catch(error => {
+      console.error("Error loading Voiceflow chat:", error);
+    });
+  }, []);
 
   if (!isOpen) return null;
-
+  
   return (
     <div className={styles.modalOverlay}>
       <div className={styles.modalContainer}>
@@ -21,19 +26,24 @@ const ChatbotModal = ({ isOpen, onClose }) => {
           <button onClick={onClose} className={styles.closeButton}>×</button>
         </div>
         <div className={styles.chatContainer}>
-          {/* Aquí usamos el componente ChatWindow de Voiceflow */}
-          <ChatWindow
-            versionID="development"
-            projectID={projectID}
-            apiKey={apiKey}
-            title="Asistente Virtual"
-            userID="user123" // Puedes generar un ID único para cada usuario
-            autostart
-            styling={{
-              height: '100%',
-              width: '100%'
-            }}
-          />
+          {ChatWindow && projectID ? (
+            <ChatWindow
+              projectID={projectID}
+              versionID="production"
+              url="https://general-runtime.voiceflow.com"
+              title="Asistente Virtual"
+              userID={`user-${Math.random().toString(36).substring(7)}`}
+              autostart
+              styling={{
+                height: '100%',
+                width: '100%'
+              }}
+            />
+          ) : (
+            <div style={{ padding: '20px', textAlign: 'center' }}>
+              Cargando chatbot...
+            </div>
+          )}
         </div>
       </div>
     </div>
