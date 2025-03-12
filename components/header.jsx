@@ -14,18 +14,16 @@ const Header = () => {
                     <h1 className="font-bold text-2xl">Tech<strong>Forge</strong></h1>
                 </Link>
 
-                {/* Redes Sociales - Centrado en móviles, alineado a la derecha en escritorio */}
+                {/* Redes Sociales y Botón de Ingresar */}
                 <div className="flex items-center justify-end gap-5 md:gap-7 ml-auto">
-                    {socialNetworks.map(({ logo, src, id }) => (
-                        <Link
-                            key={id}
-                            href={src}
-                            target="_blank"
-                            className="transition-all duration-300 hover:text-primary"
-                        >
-                            {logo}
-                        </Link>
-                    ))}
+                    {/* Botón de Ingresar */}
+                    <Link 
+                        href="https://mysite-tlxb.onrender.com/users/login" 
+                        target="_blank"
+                        className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300"
+                    >
+                        Ingresar
+                    </Link>
                 </div>
             </header>
         </MotionTransition>
