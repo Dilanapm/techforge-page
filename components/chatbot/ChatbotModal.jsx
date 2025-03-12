@@ -4,6 +4,7 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './ChatbotModal.module.css';
 import { ChatWindow } from '@voiceflow/react-chat';
+import 'regenerator-runtime/runtime';
 
 const ChatbotModal = ({ isOpen, onClose }) => {
   // Asegúrate de que estas variables estén definidas en tu .env.local
