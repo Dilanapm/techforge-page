@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Introduction = () => {
     return (
         <div className="z-20 w-full bg-darkBg/60 h-screen flex items-center justify-center overflow-hidden">
-            <div className="grid items-center h-full max-w-6xl px-6 py-10 md:grid-cols-2">
+            <div className="grid items-center max-w-6xl px-6 md:grid-cols-2">
                 
                 {/* Imagen optimizada */}
                 <Image 
@@ -46,7 +46,7 @@ const Introduction = () => {
                     </p>
 
                     {/* Botones */}
-                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-10 sm:flex-row sm:gap-5">
+                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-10 sm:flex-row sm:gap-5 pb-32">
                         <a href="/portfolio" className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                             Ver condominios
                         </a>

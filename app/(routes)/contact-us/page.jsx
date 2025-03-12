@@ -8,10 +8,10 @@ import ContainerPage from "@/components/container-page";
 export default function ContactUs() {
     return (
         <>
-<ContainerPage>
-    <InfosobreNosotros/>
-</ContainerPage>
+            <ContainerPage>
+                <InfosobreNosotros />
+            </ContainerPage>
         </>
-        
+
     );
 }

@@ -8,7 +8,7 @@ const TrialSection = () => {
                 {/* Contenedor principal */}
                 <div className="max-w-5xl mx-auto">
                     {/* Imagen Avatar */}
-                    <Image src="/avatar-3.png" alt="Logo TechForge" width={300} height={600} className="mx-auto mb-6" />
+                    <Image src="/avatar-3.webp" alt="Logo TechForge" width={300} height={600} className="mx-auto mb-6" />
 
                     {/* Título y subtítulo */}
                     <h1 className="text-3xl md:text-5xl font-bold text-white">
