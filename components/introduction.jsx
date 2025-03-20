@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link"; // Usar Next.js para navegación
 import { TypeAnimation } from 'react-type-animation';
-
+// bg-darkBg/60
 const Introduction = () => {
     return (
-        <div className="relative z-20 w-full bg-darkBg/60 min-h-screen flex items-center justify-center overflow-visible">
+        <div className="relative z-20 w-full  min-h-screen flex items-center justify-center overflow-visible">
             <div className="grid items-center max-w-6xl px-6 md:grid-cols-2">
                 
                 {/* Imagen optimizada */}
@@ -49,7 +49,9 @@ const Introduction = () => {
                     {/* Botones */}
                     <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:gap-10 sm:flex-row sm:gap-5 pb-10">
                         <Link href="/clients">
-                            <button className="px-5 py-3 transition-all border-2 cursor-pointer text-md rounded-xl hover:shadow-xl hover:shadow-white/50">
+                            <button className="px-5 py-3 transition-all border-2 cursor-pointer text-md 
+                            
+                            text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
                                 Nuestros clientes
                             </button>
                         </Link>

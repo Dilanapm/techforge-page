@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={urbanist.className}  cz-shortcut-listen="true">
         <Header />
         {children}
-        <Navbar />
+        {/* <Navbar /> */}
         <ChatbotWrapper />
       </body>
     </html>

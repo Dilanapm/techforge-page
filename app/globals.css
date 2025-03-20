@@ -9,8 +9,9 @@ html {
 html,
 body {
   /* height: 100%; */
-  color: #fff;
-  background: #1f1934;
+  color: #000000;
+  /* background: #1f1934; */
+background: #ffffff ;
 }
 
 main {

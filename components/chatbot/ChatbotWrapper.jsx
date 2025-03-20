@@ -40,7 +40,7 @@ const VoiceflowWidget = () => {
 export default function ChatbotWrapper() {
   return (
     <>
-      <ChatBubble onClick={() => window.voiceflow?.chat?.open()} />
+      {/* <ChatBubble onClick={() => window.voiceflow?.chat?.open()} /> */}
       <VoiceflowWidget />
     </>
   );
