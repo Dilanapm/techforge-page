@@ -42,7 +42,7 @@ const Introduction = () => {
                         </h1>
 
                         <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                            <strong>"TorreSegura"</strong> ayuda a la seguridad y gestión de accesos en condominios verticales mediante inteligencia artificial y control digital, garantizando un entorno seguro, eficiente y moderno.
+                            <strong>TorreSegura</strong> ayuda a la seguridad y gestión de accesos en condominios verticales mediante inteligencia artificial y control digital, garantizando un entorno seguro, eficiente y moderno.
                         </p>
 
                         {/* Botones */}

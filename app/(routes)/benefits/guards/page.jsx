@@ -4,12 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from 'react-type-animation';
 import { QrCode, Eye, ShieldCheck } from "lucide-react";
+import ContainerPage from "@/components/container-page";
+import ServiceFeature from "@/components/ServiceSection";
 
 export default function GuardBenefits() {
     return (
         <div>
             {/* Sección de introducción */}
-            <div className="relative z-20 w-full min-h-screen flex items-center overflow-visible px-4 sm:px-6 md:px-10 lg:px-16">
+            <div className="relative z-20 w-full flex items-center overflow-visible px-4 sm:px-6 md:px-10 lg:px-16 py-20 mt-0 sm:mt-10 md:mt-10 lg:mt-20">
                 <div className="grid items-center w-full grid-cols-1 md:grid-cols-2 gap-10">
                     {/* Texto */}
                     <div className="flex flex-col justify-center w-full max-w-2xl text-center md:text-left mt-20 md:mt-0 lg:mt-0">
@@ -65,7 +67,7 @@ export default function GuardBenefits() {
             </div>
 
             {/* Beneficios */}
-            <div className="py-10">
+            <div>
                 <div className="bg-secondary/30 rounded-xl py-12 px-6 md:px-12 text-center shadow-lg w-full max-w-6xl mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
                         Beneficios para Guardias de Seguridad
@@ -96,11 +98,49 @@ export default function GuardBenefits() {
                             <span className="mt-2 font-semibold">Mayor Seguridad</span>
                             <p className="text-sm text-gray-600 text-center">Evita ingresos no autorizados con registros automáticos.</p>
                         </div>
-                        
+
                     </div>
 
-                    
+
                 </div>
+            </div>
+            <div className="mt-10 sm:mt-0 md:mt-0 lg:mt-0">
+                <ContainerPage>
+                    <ServiceFeature
+                        title="Acceso rápido"
+                        subtitle="ACCESO"
+                        description="Escanea con tu App el código QR de los visitantes, automáticamente tendrás el teléfono del anfitrión y directamente desde tu celular. Captura fotos, registra y ten el control de accesos en la nube en todo momento."
+                        imageUrl="/scan-qr.webp"
+                        imageAlt="Acceso rápido con QR"
+                        imageSize="small"
+                    />
+                </ContainerPage>
+            </div>
+            <div className="mt-10 sm:mt-0 md:mt-0 lg:mt-0">
+                <ContainerPage>
+                    <ServiceFeature
+                        title="Monitoreo en tiempo real"
+                        subtitle="SEGURIDAD"
+                        description="Nuestra tecnología avanzada te permite visualizar el acceso en tiempo real, brindando control total sobre la seguridad del condominio."
+                        imageUrl="/regis.webp"
+                        imageAlt="Monitoreo en tiempo real"
+                        reverse
+                        imageSize="small"
+                    />
+                </ContainerPage>
+
+            </div>
+            <div className="mt-10 sm:mt-0 md:mt-0 lg:mt-0">
+                <ContainerPage>
+                    <ServiceFeature
+                        title="Gestión fácil y eficiente"
+                        subtitle="GUARDIAS"
+                        description="Los guardias de seguridad cuentan con una interfaz intuitiva que les permite gestionar accesos, escanear códigos QR de residentes y visitas, así como registrar movimientos y alertas de manera rápida y efectiva desde un solo lugar."
+                        imageUrl="/int-guards.webp" // Asegúrate de tener esta imagen en public/
+                        imageAlt="Interfaz de guardia"
+                        imageSize="small"
+                    />
+                </ContainerPage>
             </div>
         </div>
     );

@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from 'react-type-animation';
 import { QrCode, Smartphone, KeyRound, LogIn } from "lucide-react";
+import ContainerPage from "@/components/container-page";
+import ServiceFeature from "@/components/ServiceSection";
 
 export default function ResidentsBenefits() {
     return (
@@ -22,8 +24,6 @@ export default function ResidentsBenefits() {
                                     'Gestión desde tu celular',
                                     1000,
                                     'Olvídate de llaves o tarjetas',
-                                    1000,
-                                    'Control total de tus ingresos',
                                     1000
                                 ]}
                                 wrapper="span"
@@ -34,8 +34,8 @@ export default function ResidentsBenefits() {
                         </h1>
 
                         <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                            <strong>TorreSegura</strong> permite a los residentes gestionar sus accesos y los de sus visitantes de forma 
-rápida, segura y desde su propio celular, sin necesidad de llaves físicas.
+                            <strong>TorreSegura</strong> permite a los residentes gestionar sus accesos y los de sus visitantes de forma
+                            rápida, segura y desde su propio celular, sin necesidad de llaves físicas.
                         </p>
 
                         {/* Botones */}
@@ -66,7 +66,7 @@ rápida, segura y desde su propio celular, sin necesidad de llaves físicas.
             </div>
 
             {/* Beneficios */}
-            <div className="py-10">
+            <div className="pb-10">
                 <div className="bg-secondary/30 rounded-xl py-12 px-6 md:px-12 text-center shadow-lg w-full max-w-6xl mx-auto">
                     <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
                         Beneficios para Residentes
@@ -107,6 +107,21 @@ rápida, segura y desde su propio celular, sin necesidad de llaves físicas.
                     </div>
 
                 </div>
+            </div>
+
+
+            <div className="mt-0 sm:mt-10 md:mt-20">
+                <ContainerPage>
+                    <ServiceFeature
+                        title="Control inteligente de visitas"
+                        subtitle="RESIDENTES"
+                        description="Como residente, puedes generar códigos QR únicos para visitantes, permitiendo accesos seguros y sin contacto. Además, puedes registrar automáticamente tu salida y la de tus visitas desde la App móvil, manteniendo un historial completo de accesos."
+                        imageUrl="/gen-qr.webp"
+                        imageAlt="Monitoreo y control para residentes"
+                        reverse
+                        imageSize="small"
+                    />
+                </ContainerPage>
             </div>
         </div>
     );
