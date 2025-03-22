@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion"; // Para animaciones
-import { Menu, X, ShieldCheck, Users, Briefcase, UserCheck } from "lucide-react";
+import { Menu, X, ShieldCheck, Users, Briefcase } from "lucide-react";
 import Image from "next/image";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -52,11 +52,11 @@ const Header = () => {
                             fill
                             sizes="(max-width: 640px) 60px, (max-width: 768px) 70px, (max-width: 1024px) 75px, 100px"
                             className="rounded-xl object-contain"
-                            alt="TorreTrust Logo"
+                            alt="TorreSegura Logo"
                             priority
                         />
                     </div>
-                    <span className="text-white text-lg sm:text-md md:text-lg lg:text-xl font-semibold">TorreTrust</span>
+                    <span className="text-white text-lg sm:text-md md:text-lg lg:text-xl font-semibold">TorreSegura</span>
                 </Link>
 
                 {/* Menú */}
@@ -114,7 +114,7 @@ const Header = () => {
                                                 </div>
                                             </Link>
                                             <Link
-                                                href="#"
+                                                href="/benefits/residents"
                                                 className="block bg-blue-200/40 rounded-lg p-2 hover:bg-blue-200 transition-all duration-200"
                                             >
                                                 <div className="flex flex-col">
@@ -128,7 +128,7 @@ const Header = () => {
                                                 </div>
                                             </Link>
                                             <Link
-                                                href="#"
+                                                href="/benefits/guards"
                                                 className="block bg-yellow-200/40 rounded-lg p-2 hover:bg-yellow-200 transition-all duration-200"
                                             >
                                                 <div className="flex flex-col">
@@ -162,7 +162,7 @@ const Header = () => {
                         </div>
 
                         <Link href="/clients" className="text-white text-xl hover:text-gray-600 transition">
-                            Precios
+                            Clientes
                         </Link>
                         <Link href="/contact-us" className="text-white text-xl hover:text-gray-600 transition">
                             Contáctanos
@@ -219,8 +219,8 @@ const Header = () => {
                                         className="w-[90%] mx-auto bg-white shadow-lg rounded-lg p-4 flex flex-col gap-3 mt-2"
                                     >
                                         <Link
-                                            href="#"
-                                            className="block bg-green-200/40 rounded-lg p-2 hover:bg-green-200/70 transition-all"
+                                            href="/benefits/administrators"
+                                            className="block bg-green-200/40 rounded-lg p-2 hover:bg-green-200 transition-all"
                                         >
                                             <div className="text-gray-700 font-bold">Administradores</div>
                                             <p className="text-gray-500 text-sm">
@@ -228,8 +228,8 @@ const Header = () => {
                                             </p>
                                         </Link>
                                         <Link
-                                            href="#"
-                                            className="block bg-blue-200/40 rounded-lg p-2 hover:bg-blue-200/70 transition-all"
+                                            href="/benefits/residents"
+                                            className="block bg-blue-200/40 rounded-lg p-2 hover:bg-blue-200 transition-all"
                                         >
                                             <div className="text-gray-700 font-bold">Residentes</div>
                                             <p className="text-gray-500 text-sm">
@@ -237,7 +237,7 @@ const Header = () => {
                                             </p>
                                         </Link>
                                         <Link
-                                            href="#"
+                                            href="/benefits/guards"
                                             className="block bg-yellow-200/40 rounded-lg p-2 hover:bg-yellow-200 transition-all"
                                         >
                                             <div className="text-gray-700 font-bold">Guardias</div>
@@ -264,7 +264,7 @@ const Header = () => {
                             className="text-white hover:text-gray-600 transition"
                             onClick={toggleMenu}
                         >
-                            Precios
+                            Clientes
                         </Link>
                         <Link
                             href="/contact-us"

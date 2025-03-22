@@ -148,16 +148,16 @@ export const serviceData = [
         title: "Gestión de Pagos",
         description: "Administración de cuotas, generación de estados de cuenta y control de pagos en línea.",
     },
-    {
+    // {
 
-        icon: <Camera />,
-        title: "Monitoreo con IA",
-        description: "Uso de visión artificial para la detección de movimientos sospechosos, reconocimiento facial y reportes automáticos de seguridad.",
-    },
+    //     icon: <Camera />,
+    //     title: "Monitoreo con IA",
+    //     description: "Uso de visión artificial para la detección de movimientos sospechosos, reconocimiento facial y reportes automáticos de seguridad.",
+    // },
     {
         icon: <Speech />,
         title: "Notificaciones y Comunicaciones",
-        description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente.",
+        description: "Envío de avisos, recordatorios y noticias a los residentes de manera rápida y eficiente porparte del guardia.",
     },
     {
         icon: <Graph />,

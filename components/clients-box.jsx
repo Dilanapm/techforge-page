@@ -30,16 +30,16 @@ const ClientBox = ({ data }) => {
                     <Link
                         href={urlGithub}
                         target="_blank"
-                        className="px-4 py-2 bg-white text-black text-sm font-bold rounded-md hover:bg-gray-200 transition"
+                        className="px-4 py-2 bg-blue-700 text-white text-sm font-bold rounded-md hover:bg-gray-200 transition"
                     >
-                        Github
+                        Facebook
                     </Link>
                     <Link
                         href={urlDemo}  
                         target="_blank"
-                        className="px-4 py-2 bg-secondary text-white text-sm font-bold rounded-md hover:bg-secondary/80 transition"
+                        className="px-4 py-2 bg-orange-700 text-white text-sm font-bold rounded-md hover:bg-secondary/80 transition"
                     >
-                        Live demo
+                        Instagram
                     </Link>
                 </div>
             </div>

@@ -32,18 +32,19 @@ const TrialSection = () => {
                     </div>
 
                     {/* Título y subtítulo */}
-                    <h1 className="text-3xl md:text-5xl font-bold text-white">
-                        ¡Pruébalo 30 días y descubre <span className="text-secondary">CondoVive!</span>
+                    <h1 className="text-3xl md:text-5xl font-bold text-black">
+                        ¡Pruébalo 30 días y descubre <span className="text-secondary">TorreSegura!</span>
                     </h1>
-                    <p className="text-gray-300 mt-2 text-lg md:text-xl">
-                        Únete a las miles de personas que ahorran tiempo y organizan sus propiedades con CondoVive.
+                    <p className="text-gray-800 mt-2 text-lg md:text-xl">
+                        Únete a las miles de personas que ahorran tiempo y organizan sus propiedades con CondoVive. <br />
+                        Dejanos tus datos para poder contactarnos contigo y explicarte con mas detalle nuestro servicio
                     </p>
 
                     {/* Botones de acción */}
                     <div className="mt-6 flex flex-col md:flex-row justify-center gap-4">
-                        <button className="px-6 py-3 text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition">
+                        {/* <button className="px-6 py-3 text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition">
                             Comienza ahora
-                        </button>
+                        </button> */}
 
                         <button
                             className="px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg shadow-md transition"
@@ -56,32 +57,7 @@ const TrialSection = () => {
                     {/* Línea divisoria */}
                     <hr className="border-gray-600 w-full max-w-4xl my-4" />
 
-                    {/* Información de contacto */}
-                    <div className="grid md:grid-cols-4 gap-6 text-gray-400 text-sm w-full max-w-5xl">
-                        <div className="text-center md:text-left">
-                            <h3 className="font-semibold text-white mb-2">Contacto</h3>
-                            <p>📞 (+591) 77204038</p>
-                            <p>📧 contacto@TechForge.com</p>
-                            <p>📍 Irpavi calle 2 - 206, La Paz, Bolivia</p>
-                        </div>
-
-                        <div className="text-center md:text-left">
-                            <h3 className="font-semibold text-white mb-2">TechForge</h3>
-                            <p>Ayuda</p>
-                            <p>Seguridad</p>
-                            <p>Política de respaldo</p>
-                        </div>
-
-                        <div className="text-center md:text-left">
-                            <h3 className="font-semibold text-white mb-2">Nosotros</h3>
-                            <p>Oportunidades</p>
-                        </div>
-
-                        <div className="text-center md:text-left">
-                            <h3 className="font-semibold text-white mb-2">Recursos</h3>
-                            <p>Blog</p>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </ContainerPage>

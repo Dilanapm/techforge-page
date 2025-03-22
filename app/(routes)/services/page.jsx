@@ -24,7 +24,7 @@ const SECTIONS = [
                         {/* Sección de texto optimizada */}
                         <div className="text-center md:text-left order-2 md:order-1 items-center">
                             <h1 className="text-2xl leading-tight md:text-4xl md:mb-5 text-center">
-                                Características de nuestro <span className="font-bold text-secondary">servicio de seguridad.</span>
+                                Características de nuestro <span className="font-bold text-secondary">servicio de seguridad y gestión.</span>
                             </h1>
                             <p className="text-lg md:text-xl text-gray-300">
                                 Ofrecemos un <strong>sistema inteligente de gestión y seguridad</strong> diseñado para condominios,
