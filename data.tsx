@@ -111,7 +111,7 @@ export const dataCounter = [
     {
         id: 1,
         endCounter: 80,
-        text: "Condominios beneficiados",
+        text: "Empresas beneficiadas",
         lineRight: true,
         lineRightMobile: false,
     },

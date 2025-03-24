@@ -16,13 +16,13 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TorreSegura</title>
+        <title>TehcForge</title>
       </head>
       <body className={urbanist.className}  cz-shortcut-listen="true">
         <Header />
         {children}
         {/* <Navbar /> */}
-        <ChatbotWrapper />
+        {/* <ChatbotWrapper /> */}
         <Footer/>
       </body>
     </html>

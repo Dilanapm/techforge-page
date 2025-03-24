@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        secondary: "#009ca6",
-        darkBg: "#131424",
+        secondary: "#0073a6",  // Color institucional
+        darkBg: "#0a0a0a",     // Fondo oscuro para dark mode
       },
       backgroundImage: {
         "gradient-cover":
@@ -20,4 +20,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
