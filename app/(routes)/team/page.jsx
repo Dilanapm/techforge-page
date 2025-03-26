@@ -5,22 +5,22 @@ import ContainerPage from "@/components/container-page";
 
 const teamMembers = [
   {
-    name: "Luis Mamani",
+    name: "Pablo Marcelo Pacheco Bohorquez",
     role: "Desarrollador Frontend",
     image: "/team/luis.jpg",
   },
   {
-    name: "Carla Choque",
-    role: "Desarrolladora Backend",
+    name: "Andres Villegas Salazar",
+    role: "Desarrollador Backend",
     image: "/team/carla.jpg",
   },
   {
-    name: "Rodrigo Quispe",
-    role: "Especialista en IA",
+    name: "Dilan Apolaca Marino",
+    role: "Desarrollador Backend",
     image: "/team/rodrigo.jpg",
   },
   {
-    name: "María Flores",
+    name: "Alvaro Santiago Encinas FLores",
     role: "UX/UI Designer",
     image: "/team/maria.jpg",
   },
@@ -28,7 +28,7 @@ const teamMembers = [
 
 export default function TeamPage() {
   return (
-    <main className="bg-white text-black py-24 px-6">
+    <div className="bg-white text-black pt-24 pb-10 px-6  ">
       <div>
         {/* Encabezado */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
@@ -62,6 +62,6 @@ export default function TeamPage() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }
