@@ -12,7 +12,7 @@ const teamMembers = [
   {
     name: "Andres Villegas Salazar",
     role: "Desarrollador Backend",
-    image: "/team/carla.jpg",
+    image: "/team/villegas.webp",
   },
   {
     name: "Dilan Apolaca Marino",

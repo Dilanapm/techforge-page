@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-32 pb-20 px-6 md:px-12 bg-white text-black">
+    <div className="pt-32 pb-32 px-6 md:px-12 bg-white text-black">
+      {/* Sección de bienvenida */}
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
         {/* Texto de bienvenida */}
         <div className="flex-1 text-center md:text-left">
@@ -35,12 +36,26 @@ export default function Home() {
             src="/equipo-techforge.webp"
             alt="Equipo TechForge"
             width={500}
-            height={500}
+            height={600}
             className="rounded-xl shadow-lg object-contain"
             priority
           />
         </div>
       </div>
-    </main>
+
+      {/* Sección de compromiso */}
+      <div className="max-w-4xl mx-auto mt-24 text-center">
+        <h2 className="text-3xl font-bold mb-4">Comprometidos con la Sociedad</h2>
+        <p className="text-lg text-gray-700 mb-6">
+          En <span className="font-semibold text-secondary">TechForge</span> trabajamos con pasión para crear soluciones tecnológicas que impacten positivamente a nuestra comunidad. 
+          Creemos en el poder de la tecnología para transformar la vida en sociedad, promoviendo seguridad, eficiencia y confianza.
+        </p>
+        <Link href="/team">
+          <button className="px-6 py-3 bg-secondary hover:bg-teal-700 text-white rounded-lg shadow-md transition">
+            Conoce al equipo de TechForge
+          </button>
+        </Link>
+      </div>
+    </div>
   );
 }
