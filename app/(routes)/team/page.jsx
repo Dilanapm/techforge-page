@@ -7,7 +7,7 @@ const teamMembers = [
   {
     name: "Pablo Marcelo Pacheco Bohorquez",
     role: "Desarrollador Frontend",
-    image: "/team/luis.jpg",
+    image: "/team/pablo.webp",
   },
   {
     name: "Andres Villegas Salazar",
@@ -17,12 +17,12 @@ const teamMembers = [
   {
     name: "Dilan Apolaca Marino",
     role: "Desarrollador Backend",
-    image: "/team/rodrigo.jpg",
+    image: "/team/dilan.webp",
   },
   {
     name: "Alvaro Santiago Encinas FLores",
     role: "UX/UI Designer",
-    image: "/team/maria.jpg",
+    image: "/team/santiago.webp",
   },
 ];
 
